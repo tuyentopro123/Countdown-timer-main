@@ -1,3 +1,20 @@
+@media (max-width: 320px) {
+    .hills {
+        bottom: -160px;
+    }
+
+    .hills img {
+        max-width: 109%;
+    }
+}
+
+@media (max-width: 376px) {
+    .hills {
+        bottom: -60px;
+    }
+
+}
+
 @media (max-width: 500px) {
     h1 {
         margin: 12px 0;
