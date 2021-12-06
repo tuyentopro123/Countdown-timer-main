@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+  <div class="container">
+    <h1>Countdown App</h1>
+    <div class="countdown">
+      <div>
+        <p id="Days">00</p>
+        <h3>Days</h3>
+      </div>
+
+      <div>
+        <p id="Hours">00</p>
+        <h3>Hours</h3>
+      </div>
+
+      <div>
+        <p id="Minutes">00</p>
+        <h3>Minutes</h3>
+      </div>
+      <div>
+        <p id="Seconds">00</p>
+        <h3>Seconds</h3>
+      </div>
+    </div>
+
+    <div class="hills">
+      <img src="./images/pattern-hills.svg" alt="">
+    </div>
+
+    <div class="socials">
+      <ul>
+        <li><img src="./images/icon-facebook.svg" alt=""></li>
+        <li><img src="./images/icon-pinterest.svg" alt=""></li>
+        <li><img src="./images/icon-instagram.svg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+    
+  <button onclick="Create()" class="Button_create" >TẠO NGÀY KẾT THÚC</button>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noreferrer" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/tuyentopro123" rel="noreferrer" target="_blank" >Nguyễn Văn Tuyên</a>.
+  </div>
+
+  <div class="modal">
+    <div class="modal_overlay"></div>
+    <div class="modal_body">
+      <div class="startDate">
+        <span>Date and time</span>
+        <input class="dateTime" step="2" type="datetime-local">
+        <div class="confirm">
+          <button onclick="Accept()"  class="btn_accept">Xác nhận</button>
+          <button onclick="Cancel()" class="btn_refuse">Hủy</button> 
+        </div>     
+    </div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
